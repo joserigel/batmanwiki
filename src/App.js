@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css"
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainHeader/>
   );
 }
 
-export default App;
+class MainHeader extends React.Component {
+  render() {
+    return (
+      <header className="mainHeader">
+        <ul className="horizontalList">
+          <li><img src="./img/TheBatman.png" height={55}/></li>
+          <li><SearchForm/></li>
+        </ul>
+      </header>
+    );
+  }
+}
+
+
+class SearchForm extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleChange(event) {
+    //to fill
+  }
+  handleSubmit(event) {
+    //to fill
+  }
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <ul className="horizontalList">
+          <li><i className="material-icons">cloud</i></li>
+          <li><input className="" type="text"/></li>
+        </ul>
+      </form>
+    );
+  }
+}
