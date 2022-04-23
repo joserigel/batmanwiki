@@ -24,8 +24,41 @@ h1 {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    vertical-align: middle;
 }
+
 
 .horizontalList li{
     display: inline-block;
+    vertical-align: middle;
+}
+
+.icon {
+    color: white;
+    margin: 0.2cm;
+    vertical-align: middle;
+    font-size: 0.5cm;
+}
+
+.searchBar {
+    background-color: rgb(62, 62, 62);
+    margin-left: 0.5cm;
+    border-radius: 0.3cm;
+}
+
+.searchBar input {
+    height: 1cm;
+    width: 10cm;
+    border: 0;
+    font-size: 0.5cm;
+    color: white;
+    background-color: transparent;
+}
+
+.searchBar ::placeholder {
+    color: rgb(123, 122, 122);
+}
+
+.searchBar textarea:focus, input:focus {
+    outline: none;
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css"
 
+import { GoSearch } from "react-icons/go"
+
+
 export default function App() {
   return (
     <MainHeader/>
@@ -37,9 +40,9 @@ class SearchForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <ul className="horizontalList">
-          <li><i className="material-icons">cloud</i></li>
-          <li><input className="" type="text"/></li>
+        <ul className="horizontalList searchBar">
+          <li><GoSearch className="icon" /></li>
+          <li><input type="text" placeholder="Search"/></li>
         </ul>
       </form>
     );
