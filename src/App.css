@@ -24,9 +24,10 @@ main {
         rgb(0, 0, 0) 0,
         rgb(34, 32, 32) 10cm
     );
-    width: 80em;
+    width: 70vw;
     min-height: 100vh;
     margin: auto;
+    padding: 2em;
     padding-top: 7em;
     overflow-y: hidden;
 }
@@ -71,6 +72,12 @@ img {
     font-size: 1.2em;
 }
 
+.logo {
+    height:4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .searchBar {
     background-color: rgb(62, 62, 62);
     margin-left: 0.5cm;
@@ -78,10 +85,10 @@ img {
 }
 
 .searchBar input {
-    height: 1cm;
-    width: 15cm;
+    height: 1em;
+    width: 50vw;
     border: 0;
-    font-size: 0.5cm;
+    font-size: 1em;
     font-family: Gogh;
     color: white;
     background-color: transparent;
@@ -113,57 +120,5 @@ img {
 }
 
 
-.article {
-    text-align: justify;
-    padding: 2em;
-}
 
-.article h1 {
-    color: white;
-    text-align: center;
-}
 
-.article h2 {
-    font-size: 1.5em; 
-}
-
-.mainDescription {
-    float: right;
-    width: min-content;
-    margin: 2em;
-    background-color: white;
-    padding: 0.2em;
-    border-radius: 0.1em;
-    text-align: left;
-    color: black;
-}
-
-.mainDescription table{
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.mainDescription h2 {
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.mainDescription img {
-    height: 32em;
-    width: 24em;
-}
-
-.mainDescription tbody>tr>td {
-    padding: 0.2em;
-}
-
-.mainDescription tbody>tr>td:nth-child(0) {
-    padding-top: 2em;
-    text-align: right
-}
-
-.mainDescription tbody>tr>td:nth-child(1) {
-    border-right: 1px solid rgb(146, 133, 133);
-}
